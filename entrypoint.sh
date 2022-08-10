@@ -35,4 +35,5 @@ if [ ! -z ${DOH_UPSTREAM_SERVERS} ]; then
     upstream_args="--upstream $(echo ${DOH_UPSTREAM_SERVERS} | sed 's/,/ --upstream /g')";
 fi;
 
+export HTTPS_PROXY=${LOCAL_PROXY_ADDRESS:=socks5://localhost:8080}
 cloudflared proxy-dns $upstream_args --address 0.0.0.0
