@@ -5,6 +5,7 @@
 A **D**NS **o**ver **H**TTP **o**ver **S**OCKS **o**ver **SSH** container for fun and privacy in monitored environments. [Check out the blogpost](#).
 
 # Usage
+*You must attach a volume to mount your private key. This also means Key authentication is required.*
 ```bash
 docker run \
     --restart always # <- Ensures that this container will start up with the Docker daemon in case of a system reboot
