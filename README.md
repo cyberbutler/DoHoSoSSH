@@ -8,7 +8,6 @@ A **D**NS **o**ver **H**TTP **o**ver **S**OCKS **o**ver **SSH** container for fu
 *You must attach a volume to mount your private key. This also means Key authentication is required.*
 ```bash
 docker run \
-    --restart always \
     --name dohosossh \
     -t \
     -v $(pwd)/myprivate.key:/tunnel/private.key \
