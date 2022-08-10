@@ -11,7 +11,7 @@ docker run \
     --restart always \
     --name dohosossh \
     -t \
-    -v ./myprivate.key:/tunnel/private.key \
+    -v $(pwd)/myprivate.key:/tunnel/private.key \
     -e AUTOSSH_REMOTE_USER=tunneluser  \
     -e AUTOSSH_REMOTE_HOST=172.18.0.1 \
     -e DOH_UPSTREAM_SERVERS=https://1.1.1.1/dns-query,https://8.8.8.8/dns-query \
