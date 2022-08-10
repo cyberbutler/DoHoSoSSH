@@ -23,8 +23,8 @@ Use the following arguments to customize your configuration:
 | Environment Variable | Description | Default |
 | -------------------- | ----------- | ------- | 
 | `AUTOSSH_REMOTE_HOST` | The SSH Target Host **required* | |
-| `AUTOSSH_REMOTE_PORT` | The SSH Target Port **required* | |
 | `AUTOSSH_REMOTE_USER` | The Remote User to Authenticate as **required* | |
+| `AUTOSSH_REMOTE_PORT` | The SSH Target Port | `22` |
 | `AUTOSSH_MONITOR_PORT` | The Monitor Port used by `autossh` | `0` (Disabled) |
 | `AUTOSSH_OPTIONS` | SSH Optional arguments. | `-N -o "StrictHostKeyChecking=no"` |
 | `AUTOSSH_PRIVATE_KEYFILE` | The Private Key filepath | `/tunnel/private.key` | 
